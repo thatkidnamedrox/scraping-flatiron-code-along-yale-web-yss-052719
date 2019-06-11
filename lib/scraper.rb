@@ -23,9 +23,7 @@ class Scraper
 
   def get_courses
     doc = self.get_page
-    doc.css(".post").map do |course|
-      course.css("h2").text
-    end
+    doc.css(".post")
   end
 end
 
