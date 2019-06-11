@@ -36,5 +36,3 @@ class Scraper
 end
 
 scraper = Scraper.new.print_courses
-binding.pry
-0
