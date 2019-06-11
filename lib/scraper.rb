@@ -34,6 +34,6 @@ class Scraper
     end
 end
 
-scraper = Scraper.new
+scraper = Scraper.new.print_courses
 binding.pry
 0
