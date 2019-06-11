@@ -30,3 +30,5 @@ class Scraper
 end
 
 scraper = Scraper.new
+binding.pry
+0
