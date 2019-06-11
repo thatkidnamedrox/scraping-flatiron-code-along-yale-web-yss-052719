@@ -27,7 +27,6 @@ class Scraper
     doc.css(".post").map do |course|
       course.css("h2").text
     end
-
 end
 
 Scraper.new.get_page
