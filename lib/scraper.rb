@@ -32,6 +32,7 @@ class Scraper
       course.schedule = e.css(".date").text
       course.description = e.css("p").text
     end
+  end
 end
 
 scraper = Scraper.new.print_courses
