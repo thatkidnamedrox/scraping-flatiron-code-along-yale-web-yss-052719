@@ -22,6 +22,12 @@ class Scraper
     binding.pry
   end
 
+  def get_courses
+    doc = self.get_page
+    doc.css(".post").map do |course|
+      course.css("h2").text
+    end
+
 end
 
 Scraper.new.get_page
